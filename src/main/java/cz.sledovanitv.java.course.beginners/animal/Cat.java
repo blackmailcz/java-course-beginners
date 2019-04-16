@@ -3,7 +3,7 @@ package cz.sledovanitv.java.course.beginners.animal;
 import cz.sledovanitv.java.course.beginners.Color;
 import cz.sledovanitv.java.course.beginners.Speakable;
 
-public class Cat implements Speakable {
+public class Cat extends Animal implements Speakable {
 
     private String colorString = "white";
     private Color color = Color.WHITE;
@@ -69,5 +69,9 @@ public class Cat implements Speakable {
 
     public void speak() {
         meow();
+    }
+
+    public void breathe() {
+        System.out.println("A cat is sloooowly breathing...");
     }
 }
